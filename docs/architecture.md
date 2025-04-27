@@ -1,27 +1,31 @@
-# 系统架构文档模板
+# System Architecture Document Template
 
-## 1. 总体架构描述
-简要说明系统的整体架构设计思路。
+## 1. Overall Architecture Overview
+Briefly describe the overall system architecture and design philosophy.
 
-## 2. 组件划分
-- 组件1：功能说明、主要职责
-- 组件2：功能说明、主要职责
-（请按实际系统分解主要模块/组件）
+## 2. Component Breakdown
+- Component 1: Function and main responsibilities
+- Component 2: Function and main responsibilities
+(Decompose the system into main modules/components as needed)
 
-## 3. 组件关系与依赖
-用文字或图示（如 Mermaid）描述各组件之间的关系和依赖。
+## 3. Component Relationships & Dependencies
+Describe the relationships and dependencies between components using text or diagrams (e.g., Mermaid).
 
 ```mermaid
 graph TD
-  A[组件A] --> B[组件B]
-  B --> C[组件C]
+  A[Component A] --> B[Component B]
+  B --> C[Component C]
 ```
 
-## 4. 主要流程
-描述系统的核心业务流程或数据流。
+## 4. Main Workflows
+Describe the core business or data flows of the system.
 
-## 5. 技术选型与理由
-列出关键技术选型及其原因。
+## 5. Technology Choices & Rationale
+List key technology choices and the reasons for each.
 
-## 6. 约束与注意事项
-说明架构设计中的限制、假设或注意事项。
+## 6. Constraints & Considerations
+Describe any constraints, assumptions, or important considerations in the architecture.
+
+---
+
+> Please supplement and refine the above sections according to your actual project.

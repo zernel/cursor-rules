@@ -1,29 +1,29 @@
-# 技术方案与开发环境模板
+# Technical Solution & Development Environment Template
 
-## 1. 技术栈
-- 前端：
-- 后端：
-- 数据库：
-- 其他：
+## 1. Technology Stack
+- Frontend:
+- Backend:
+- Database:
+- Others:
 
-## 2. 开发环境配置
-- 操作系统：
-- 依赖管理工具：
-- 主要依赖包及版本：
-- 本地开发启动方式：
+## 2. Development Environment Setup
+- Operating System:
+- Dependency Management Tool:
+- Main Dependencies & Versions:
+- Local Development Startup Instructions:
 
-## 3. 关键技术决策
-- 决策1：原因说明
-- 决策2：原因说明
+## 3. Key Technical Decisions
+- Decision 1: Reason
+- Decision 2: Reason
 
-## 4. 设计模式与最佳实践
-- 采用的设计模式：
-- 相关说明：
+## 4. Design Patterns & Best Practices
+- Design Patterns Used:
+- Related Notes:
 
-## 5. 技术约束
-- 约束1：
-- 约束2：
+## 5. Technical Constraints
+- Constraint 1:
+- Constraint 2:
 
 ---
 
-> 请根据实际项目情况补充和完善以上内容。
+> Please supplement and refine the above sections according to your actual project.

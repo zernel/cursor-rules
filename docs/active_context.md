@@ -1,16 +1,26 @@
-# 当前开发上下文模板
+# Active Development Context Template
 
-## 1. 当前工作重点
-简要描述当前开发的主要内容或关注点。
+This file serves as the single source for task planning, progress tracking, current work, active decisions, known issues, and next steps. Please keep it up to date as the project evolves.
 
-## 2. 近期变更
-- 变更1：
-- 变更2：
+## 1. Current Focus
+Briefly describe the main development focus or priorities at this stage.
 
-## 3. 活跃决策与考虑事项
-- 决策1：
-- 决策2：
+## 2. Recent Changes
+- Change 1:
+- Change 2:
 
-## 4. 下一步计划
-- 计划1：
-- 计划2：
+## 3. Active Decisions & Considerations
+- Decision 1:
+- Decision 2:
+
+## 4. Known Issues
+- Issue 1:
+- Issue 2:
+
+## 5. Next Steps
+- Next Step 1:
+- Next Step 2:
+
+---
+
+> Please update this file regularly to reflect the latest project context and progress.
