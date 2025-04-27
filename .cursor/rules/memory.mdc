@@ -25,18 +25,7 @@ flowchart TD
     AC --> ER[ [error-documentation.mdc](mdc:.cursor/rules/error-documentation.mdc)]
     AC --> LL[ [lessons-learned.mdc](mdc:.cursor/rules/lessons-learned.mdc) ]
     
-    subgraph LIT[ @docs/literature ]
-        L1[...]
-        L2[...]
-    end
-    
-    subgraph RFC[ @tasks/rfc/ ]
-        R1[...]
-        R2[...]
-    end
-    
     PC --o LIT
-    TC --o RFC
 
 ```
 ## Core Files (Required)
@@ -84,17 +73,6 @@ flowchart TD
   - It captures important patterns, preferences, and project intelligence
   - It is detailed in @lessons-learned.mdc
 
-## Context Files (Optional)
-Detailed docs. Retrieve on demand if needed for context.
-
-1. docs/literature/ :
-  - literature survey and researches are in this directory  
-  - Each literature topic is a latex file (docs/literature/*.tex)
-
-2. tasks/rfc/ :
-  - contains RFC for each individual task in @tasks_plan.md
-  - RFCs will be in latex file format (tasks/*.tex)
-
 ## Additional Context
 Create additional files or folders as Memory files in docs/ or tasks/ when they help organize:
 - Integration specifications
@@ -110,7 +88,7 @@ The system operates in distinct MODES: (PLAN/ACT) or analogously (Architect/Code
 ## PLAN or Architect MODE
 ```mermaid
 flowchart TD
-    Start[Start] --> ReadFiles[Read Memory Files ("docs/": (a)"docs/architecture.md" (b)"docs/product_requirement_docs.md" (c)"docs/technical.md". "tasks/" : (a)"tasks/active_context.md" (b)"tasks/tasks_plan.md". if needed further: "docs/literature" and "tasks/rfc") ]
+    Start[Start] --> ReadFiles[Read Memory Files ("docs/": (a)"docs/architecture.md" (b)"docs/product_requirement_docs.md" (c)"docs/technical.md". "tasks/" : (a)"tasks/active_context.md" (b)"tasks/tasks_plan.md".) ]
     ReadFiles --> CheckFiles{Files Complete?}
     
     CheckFiles -->|No| Plan[Create Plan]
@@ -125,17 +103,17 @@ flowchart TD
     Verification -->|No| Clarify[Seek Clarification]
     Clarify --> Strategy[Develop Strategy]
 
-    Verification -->|Yes| DocumentMemory[Document in Memory Files ("docs/": (a)"docs/architecture.md" (b)"docs/product_requirement_docs.md" (c)"docs/technical.md". "tasks/" : (a)"tasks/active_context.md" (b)"tasks/tasks_plan.md" if needed further: "docs/literature" and "tasks/rfc")]
+    Verification -->|Yes| DocumentMemory[Document in Memory Files ("docs/": (a)"docs/architecture.md" (b)"docs/product_requirement_docs.md" (c)"docs/technical.md". "tasks/" : (a)"tasks/active_context.md" (b)"tasks/tasks_plan.md")]
 ```
 
 ## ACT or Code MODE
 ```mermaid
 flowchart TD
-    Start[Start] --> Context[Check Memory Files (Core Files always ("docs/": (a)"docs/architecture.md" (b)"docs/product_requirement_docs.md" (c)"docs/technical.md". "tasks/" : (a)"tasks/active_context.md" (b)"tasks/tasks_plan.md"), rest based on context (if needed further: "docs/literature" and "tasks/rfc")) ]
+    Start[Start] --> Context[Check Memory Files (Core Files always ("docs/": (a)"docs/architecture.md" (b)"docs/product_requirement_docs.md" (c)"docs/technical.md". "tasks/" : (a)"tasks/active_context.md" (b)"tasks/tasks_plan.md"), rest based on context) ]
     Context --> Update[Update Documentation]
     Update --> Rules[Update [lessons-learned.mdc](mdc:.cursor/rules/lessons-learned.mdc), [error-documentation.mdc](mdc:.cursor/rules/error-documentation.mdc) if needed]
     Rules --> Execute[Execute Task]
-    Execute --> Document[Document Changes in Memory Files ("docs/": (a)"docs/architecture.md" (b)"docs/product_requirement_docs.md" (c)"docs/technical.md". "tasks/" : (a)"tasks/active_context.md" (b)"tasks/tasks_plan.md" if needed further: "docs/literature" and "tasks/rfc") ]
+    Execute --> Document[Document Changes in Memory Files ("docs/": (a)"docs/architecture.md" (b)"docs/product_requirement_docs.md" (c)"docs/technical.md". "tasks/" : (a)"tasks/active_context.md" (b)"tasks/tasks_plan.md") ]
 ```
 
 # Documentation Updates
